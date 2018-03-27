@@ -4,7 +4,7 @@ $(window).load(function() {
   })
 });
 
-var PROTOTYPE_URL = "/K";
+var PROTOTYPE_URL = "/M";
 
 function thankYouMessage() {
   var pref = sessionStorage.singlePref;

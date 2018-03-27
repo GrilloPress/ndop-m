@@ -1,4 +1,4 @@
-var PROTOTYPE_URL = "/K";
+var PROTOTYPE_URL = "/M";
 
 $(window).load( function() {
 
