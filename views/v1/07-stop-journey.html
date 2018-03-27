@@ -1,0 +1,32 @@
+{% set title = 'Website under development. Return to continue - Register your preference for sharing health data' %}
+{% set PROTOTYPE_URL = 'v1' %}
+{% set content_title = "Return to continue" %}
+{% block scripts %}
+<script src="/javascripts/details.polyfill-1.0.0.min.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      Register your preference for sharing health data
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          <h1 class="page-title">{{content_title}}</h1>
+          <p>
+            You are using a website which is being developed. To continue, please return to the register your preference website.
+          </p>
+          <a role="button" class="button" aria-label="Return to the register your preference website to continue browsing" href="/{{PROTOTYPE_URL}}/06-register-your-preference">Return to the website</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

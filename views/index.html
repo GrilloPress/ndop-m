@@ -1,0 +1,77 @@
+{% set title = 'Register your preferences for sharing health data' %}
+{% block scripts %}
+
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-section">
+    <div class="local-header">
+      <h1 class="local-header__title">{{title}}</h1>
+      <div class="local-header__intro">
+        <p>Homepage for K series {{title}} prototypes.</p>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="column--two-thirds">
+        <div class="callout callout--attention">
+          <h2>Stable</h2>
+          <h3>
+            <a title="Prototype K Summary Page - {{ title }}" href="/K/index">Prototype K</a>
+          </h3>
+          <p>
+            Landing page for Prototype K series
+          </p>
+          <p><a title="Start Prototype K - {{ title }}" role="button" class="button" href="/K/01-overview">Start Prototype K</a></p>
+        </div>
+
+        <div class="callout">
+          <h3>
+            <a title="Prototype K Summary Page - {{ title }}" href="/K/index">Prototype K</a>
+          </h3>
+          <p>
+            Landing page for Prototype K series
+          </p>
+          <p><a title="Start Prototype K - {{ title }}" role="button" class="button" href="/K/01-overview">Start Prototype K</a></p>
+        </div>
+
+        <div class="callout">
+          <h3>
+            <a title="Prototype v1 Summary Page - {{ title }}" href="/v1/index">Prototype v1</a>
+          </h3>
+          <p>
+            Landing page for Prototype v1. Landing page only. No service journey.
+          </p>
+          <p><a title="Start Prototype v1 - {{ title }}" role="button" class="button" href="/v1/01-overview">Start Prototype v1</a></p>
+        </div>
+
+      </div>
+
+      <div class="column--one-third">
+        <div class="callout callout--muted">
+          <h2 class="h3">Recent prototypes</h2>
+          <ul class="link-list">
+            <li>
+              <a href="https://ndop-j.herokuapp.com/">Prototype J</a>
+            </li>
+            <li>
+              <a href="https://ndop-h.herokuapp.com/">Prototype H</a>
+            </li>
+            <li>
+              <a href="https://ndop-g.herokuapp.com/">Prototype G</a>
+            </li>
+            <li>
+              <a href="https://ndop-f.herokuapp.com/">Prototype F</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</main>
+{% endblock %}
