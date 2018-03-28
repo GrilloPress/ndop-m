@@ -3450,6 +3450,9 @@ input[type=range]:focus::-ms-fill-upper {
     text-align: center;
     position: relative;
     padding: 0 2em; }
+    @media (max-width: 640px) {
+      .callout--interruption .int-card .int-card--img {
+        display: none; } }
     .callout--interruption .int-card .int-card--img .number-circle {
       position: absolute;
       top: 0;

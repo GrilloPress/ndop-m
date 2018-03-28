@@ -3,14 +3,14 @@ $(window).load(function() {
   preferenceChecker();
 });
 
-var PROTOTYPE_URL = "/M";
+var THE_PROTOTYPE_URL = "/M";
 
 function preferenceChecker() {
   var pref = sessionStorage.singlePref;
 
   // This is now an ugly hack...
 
-  var prefText = ( pref == "true"  ) ?  "<p>Your health data <strong>can</strong> be used | <a href='" + PROTOTYPE_URL + "/app/05-make-your-choice' onclick='history.go(-1); return false;'>Change <span class='util-visuallyhidden'>your preference</span></a></p>" : "<p>Your health data <strong>cannot</strong> be used | <a href='" + PROTOTYPE_URL + "/app/05-make-your-choice' onclick='history.go(-1); return false;'>Change <span class='util-visuallyhidden'>your preference</span></a></p>";
+  var prefText = ( pref == "true"  ) ?  "<p>Your health data <strong>can</strong> be used | <a href='" + THE_PROTOTYPE_URL + "/app/05-make-your-choice' onclick='history.go(-1); return false;'>Change <span class='util-visuallyhidden'>your preference</span></a></p>" : "<p>Your health data <strong>cannot</strong> be used | <a href='" + THE_PROTOTYPE_URL + "/app/05-make-your-choice' onclick='history.go(-1); return false;'>Change <span class='util-visuallyhidden'>your preference</span></a></p>";
 
   $( '#your-preference' ).after( prefText );
 

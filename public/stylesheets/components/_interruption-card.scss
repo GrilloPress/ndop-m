@@ -88,6 +88,9 @@
       text-align: center;
       position: relative;
       padding: 0 2em;
+      @include media(mobile) {
+        display: none;
+      }
 
       .number-circle {
 

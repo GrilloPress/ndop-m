@@ -1,4 +1,4 @@
-var PROTOTYPE_URL = "/M";
+var THE_PROTOTYPE_URL = "/M";
 
 $(window).load( function() {
 
@@ -69,9 +69,9 @@ function confirm() {
   var singlePref = sessionStorage.singlePref;
 
   if (singlePref == "true") {
-    window.location.href = PROTOTYPE_URL + '/app/06-confirm-your-preference';
+    window.location.href = THE_PROTOTYPE_URL + '/app/06-confirm-your-preference';
   } else if (singlePref == "false") {
-    window.location.href = PROTOTYPE_URL + '/app/06-confirm-your-preference';
+    window.location.href = THE_PROTOTYPE_URL + '/app/06-confirm-your-preference';
   } else {
     $(" .error-summary ").addClass(" error-message-active ").focus();
 

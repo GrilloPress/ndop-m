@@ -1,6 +1,6 @@
 //
 
-var PROTOTYPE_URL = "/M";
+var THE_PROTOTYPE_URL = "/M";
 
 var count = 0;
 
@@ -34,7 +34,7 @@ function resendCode() {
     $( "#resend-notice" ).hide().fadeIn( "slow", function() {
     });
 
-    $( "#resend-code" ).replaceWith( "<a href='" + PROTOTYPE_URL + "/app/04X-contact-us'>Contact us</a>" );
+    $( "#resend-code" ).replaceWith( "<a href='" + THE_PROTOTYPE_URL + "/app/04X-contact-us'>Contact us</a>" );
     $('html,body').animate({scrollTop: $('.alert').offset().top -100});
     $('.alert' ).focus();
   }
@@ -53,11 +53,11 @@ function submitCode() {
     // return false;
 
   } else if ( code == '666' ) {
-    window.location.href = PROTOTYPE_URL + "/app/04X-incorrect-code";
+    window.location.href = THE_PROTOTYPE_URL + "/app/04X-incorrect-code";
     // if 666 handle as error?
 
   } else {
-    window.location.href = PROTOTYPE_URL + "/app/05-make-your-choice";
+    window.location.href = THE_PROTOTYPE_URL + "/app/05-make-your-choice";
   }
 
 }
