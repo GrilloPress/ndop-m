@@ -9,3 +9,13 @@
 
   }
 }
+
+.page-links__container {
+
+  margin: 16px 0;
+
+  @include media(mobile) {
+    margin: 16px 0;
+  }
+
+}

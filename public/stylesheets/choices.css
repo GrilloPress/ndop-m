@@ -2597,7 +2597,7 @@ a:visited {
     display: none; } }
 
 .menu-icon a {
-  color: #fff;
+  color: #fff !important;
   text-decoration: none; }
 
 .menu-icon__link {

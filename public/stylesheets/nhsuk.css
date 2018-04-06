@@ -3103,7 +3103,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: 600;
   line-height: 48px;
   text-transform: none;
-  padding: 22px 0 0 4px; }
+  padding: 22px 0 4px 0; }
   @media (min-width: 641px) {
     .page-title__NHSUK {
       font-size: 40px;
@@ -3112,6 +3112,9 @@ input[type=range]:focus::-ms-fill-upper {
     .page-title__NHSUK {
       font-size: 40px;
       line-height: 48px; } }
+  @media (max-width: 640px) {
+    .page-title__NHSUK {
+      padding: 0; } }
   .page-title__NHSUK small {
     display: block;
     font-size: 60%;
@@ -3491,5 +3494,11 @@ input[type=range]:focus::-ms-fill-upper {
   color: #231f20; }
   .link--new-tab span.underline {
     text-decoration: underline; }
+
+.page-links__container {
+  margin: 16px 0; }
+  @media (max-width: 640px) {
+    .page-links__container {
+      margin: 16px 0; } }
 
 /*# sourceMappingURL=nhsuk.css.map */

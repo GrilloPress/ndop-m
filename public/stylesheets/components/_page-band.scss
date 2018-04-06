@@ -60,7 +60,11 @@
 .page-title__NHSUK {
 
   @include bold-font(40);
-  padding: 22px 0 0 4px;
+  padding: 22px 0 4px 0;
+
+  @include media(mobile) {
+    padding: 0;
+  }
 
     small {
 
