@@ -3,19 +3,10 @@
 {% set PROTOTYPE_URL = 'NHSUK' %}
 {% block scripts %}
 {% endblock %}
-{% block styles %}
-<link rel="stylesheet" href="/stylesheets/choices.css" media="screen" type="text/css">
-{% endblock %}
-{% extends 'layouts/layout.html' %}
+{% extends 'layouts/choices.html' %}
 
 {% block body %}
 <main id="content" role="main">
-  <div class="page-band">
-    <div class="page-section">
-      Register your preference for sharing health data
-    </div>
-  </div>
-
   <div class="page-section">
       <div class="reading-width">
         <h1 class="page-title">{{content_title}}</h1>

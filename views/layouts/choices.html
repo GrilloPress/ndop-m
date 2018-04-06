@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <link rel="stylesheet" href="/stylesheets/choices.css" media="screen" type="text/css">
+  {% include "partials/_header.html" %}
+  {% import "partials/_macros.html" as patterns %}
+  {% block scripts %}{% endblock %}
+  <script src="/javascripts/cookie.js"></script>
+</head>
+<body class="{% if PROTOTYPE_URL %}{{ PROTOTYPE_URL }}{% endif %}">
+  <div class="skiplinks">
+    <div class="skiplinks__inner">
+      <a href="#content" class="skiplinks__link">Skip to main content</a>
+    </div>
+  </div>
+
+  {% if COOKIE_TRUE %}
+  <div class="banner cookie">
+    <div class="page-section">
+      We use cookies to make this service simpler. <a target="_blank" rel="nofollow" href="/{% if PROTOTYPE_URL %}{{ PROTOTYPE_URL }}{% endif %}/00-cookie-policy">Find out more about cookies<span class="util-visuallyhidden"> - Page opens in new window</span></a><span aria-hidden="true"> (opens in new window)</span>.
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="banner beta">
+    <div class="page-section">
+      <span>BETA</span> This is a new service - your feedback will help this service.
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="site-header__top">
+      <div class="site-header__brand">
+        <!-- noindex -->
+        <a href="#">
+          <img src="https://www.nhs.uk/static/nhsuk_shared/img/choices-logo.5e9e38a7e3ff.png" class="nhs-choices-logo" alt="Go to NHS.UK homepage">
+        </a>
+        <span class="site-header__tagline">Your health, your choices</span>
+      </div>
+
+      <div class="site-header__controls">
+        <div class="site-header__user-links user-links">
+          <span class="user-links__right-align">
+            <a class="user-links__account" href="#">User Accounts</a>
+          </span>
+        </div>
+        <div id="search" class="site-header__search search">
+          <form id="gs">
+            <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="search__input tt-hint" type="text" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input id="q" name="q" class="search__input tt-input" type="text" placeholder="Enter a search term" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Frutiger W01&quot;; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-suggestions"></div></div></span>
+            <div class="search__button icon-Search">
+              <input type="submit" value="">
+            </div>
+          </form>
+        </div>
+        <div id="menu-icon" class="site-header__menu-icon menu-icon">
+          <a id="main-nav-toggle" class="menu-icon__link" href="#">Menu</a>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+
+    <nav id="main-nav" class="site-header__nav main-nav main-nav">
+
+      <div id="main-nav-items" class="main-nav__items">
+        <ul class="main-nav__page-menu">
+
+
+
+          <li class="active">
+            <a href="#">Health A-Z</a>
+            <ul>
+
+              <li><a href="#">Arthritis</a></li>
+
+              <li><a href="#">Asthma</a></li>
+
+              <li><a href="#">Back pain</a></li>
+
+              <li><a href="#">Stress, anxiety, depression</a></li>
+
+              <li><a href="#">Breast cancer</a></li>
+
+              <li><a href="#">Pregnancy and baby</a></li>
+
+              <li><a href="/Conditions/Diabetes/">Diabetes</a></li>
+
+              <li><a href="/Conditions/dementia/about/">Dementia</a></li>
+
+              <li><a href="/Conditions/Coronary-heart-disease">Heart disease</a></li>
+
+              <li><a href="/conditions/measles">Measles</a></li>
+
+              <li><a href="/Conditions/nhs-health-check/">NHS Health Check</a></li>
+
+              <li><a href="/Conditions/vaccinations/">Vaccinations</a></li>
+
+              <li><a href="/CHQ/Pages/home.aspx">Common health questions</a></li>
+
+              <li><a href="/Conditions/Pages/BodyMap.aspx?Index=A">All A-Z topics</a></li>
+
+            </ul>
+
+          </li>
+
+
+
+
+          <li class="">
+            <a href="/livewell/Pages/Livewellhub.aspx">Live Well</a>
+            <ul>
+
+              <li><a href="/Livewell/alcohol">Alcohol</a></li>
+
+              <li><a href="/LiveWell/c25k/Pages/couch-to-5k.aspx">Couch to 5K</a></li>
+
+              <li><a href="/livewell/dentalhealth">Teeth and dentistry</a></li>
+
+              <li><a href="/livewell/fitness">Fitness</a></li>
+
+              <li><a href="/livewell/winterhealth/pages/fluandthefluvaccine.aspx">The flu jab</a></li>
+
+              <li><a href="/livewell/healthy-eating">Healthy eating</a></li>
+
+              <li><a href="/livewell/loseweight">Lose weight</a></li>
+
+              <li><a href="/livewell/mentalhealth/Pages/Mentalhealthhome.aspx">Mental health</a></li>
+
+              <li><a href="/Livewell/Pain/Pages/Painhome.aspx">Pain</a></li>
+
+              <li><a href="/livewell/sexualhealth">Sexual health</a></li>
+
+              <li><a href="/LiveWell/sleep/Pages/sleep-home.aspx">Sleep</a></li>
+
+              <li><a href="/livewell/smoking">Stop smoking</a></li>
+
+              <li><a href="/livewell/tiredness-and-fatigue">Tiredness</a></li>
+
+              <li><a href="/tools/pages/toolslibrary.aspx">Health check tools</a></li>
+
+              <li><a href="/livewell/pages/topics.aspx">All Live Well topics</a></li>
+
+            </ul>
+
+          </li>
+
+
+
+
+          <li class="">
+            <a href="/Conditions/social-care-and-support-guide/Pages/what-is-social-care.aspx">Care and support</a>
+            <ul>
+
+              <li><a href="/Conditions/social-care-and-support-guide/Pages/how-can-i-get-social-care-support.aspx">Your rights to care and support</a></li>
+
+              <li><a href="/conditions/social-care-and-support-guide/Pages/choosing-care-services.aspx">Choosing care services</a></li>
+
+              <li><a href="/Conditions/social-care-and-support-guide/Pages/assessment-care-needs.aspx">Social care assessments </a></li>
+
+              <li><a href="/Conditions/social-care-and-support-guide/Pages/nhs-continuing-care.aspx">NHS continuing care </a></li>
+
+              <li><a href="/Conditions/social-care-and-support-guide/Pages/mental-capacity.aspx">Mental capacity </a></li>
+
+              <li><a href="/Conditions/social-care-and-support-guide/Pages/home-care.aspx">Home care</a></li>
+
+              <li><a href="/Conditions/social-care-and-support-guide/Pages/care-homes.aspx">Care homes</a></li>
+
+              <li><a href="/Conditions/social-care-and-support-guide/Pages/breaks-for-carers-respite-care.aspx">Breaks from caring</a></li>
+
+              <li><a href="/Conditions/social-care-and-support-guide/Pages/carers-rights-care-act-2014.aspx">Carers’ rights </a></li>
+
+              <li><a href="/Conditions/social-care-and-support-guide/Pages/young-carers-rights.aspx">Young carers </a></li>
+
+              <li><a href="/conditions/social-care-and-support/">All care and support topics</a></li>
+
+            </ul>
+
+          </li>
+
+
+
+
+          <li class="nodrop">
+            <a href="/news/">Health news</a>
+
+          </li>
+
+
+
+
+          <li class="">
+            <a href="/service-search">Services near you</a>
+            <ul>
+
+              <li><a href="/Service-Search/Accident-and-emergency-services/LocationSearch/428">A&amp;E</a></li>
+
+              <li><a href="/Service-Search/Hospital/LocationSearch/7/Hospitals">Hospitals</a></li>
+
+              <li><a href="/Service-Search/GP/LocationSearch/4">GPs</a></li>
+
+              <li><a href="/Service-Search/Dentist/LocationSearch/3">Dentists</a></li>
+
+              <li><a href="/Service-Search/Pharmacy/LocationSearch/10">Pharmacies</a></li>
+
+              <li><a href="/Service-Search/Care at home/LocationSearch/1833">Homecare and care homes</a></li>
+
+              <li><a href="/Service-Search/Depression/LocationSearch/288">Depression</a></li>
+
+              <li><a href="/Service-Search/Maternity-service/LocationSearch/1802">Maternity</a></li>
+
+              <li><a href="/Service-Search/Alcohol-addiction/LocationSearch/1805">Alcohol</a></li>
+
+              <li><a href="/Service-Search/Sexual-health-services/LocationSearch/1847">Sexual health</a></li>
+
+              <li><a href="/Service-Search/Hospital/LocationSearch/7/Consultants">Consultants</a></li>
+
+              <li><a href="/Service-Search/Stop-smoking-services/LocationSearch/1846">Stop smoking services</a></li>
+
+              <li><a href="/Service-Search/Urgent-Care/LocationSearch/1824">Urgent care services</a></li>
+
+              <li><a href="/service-search">All directories</a></li>
+
+            </ul>
+
+          </li>
+
+
+        </ul>
+        <ul class="main-nav__account-menu account-menu">
+          <li><a href="#">Log in</a></li>
+          <li><a href="#">Create an account</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- endnoindex -->
+  </header>
+    {% block body %}{% endblock %}
+    {% include "partials/_footer.html" %}
+    {% include "partials/_analytics.html" %}
+
+  </body>
+</html>
