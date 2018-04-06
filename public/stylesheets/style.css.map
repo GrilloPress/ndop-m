@@ -2,8 +2,9 @@
 	"version": 3,
 	"file": "style.css",
 	"sources": [
-		"style.scss"
+		"style.scss",
+		"components/_choices_footer.scss"
 	],
-	"mappings": "AAAA,AAII,OAJG,CAEL,GAAG,CAED,EAAE,CAAC;EAED,SAAS,EAAE,IAAK,GACjB",
+	"mappings": "AAAA,AAII,OAJG,CAEL,GAAG,CAED,EAAE,CAAC;EAED,SAAS,EAAE,IAAK,GACjB;;ACPL,AAEE,cAFY,CAEZ,CAAC,CAAC;EAEA,KAAK,EAAE,KAAM,GACd",
 	"names": []
 }
