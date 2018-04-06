@@ -3096,6 +3096,26 @@ input[type=range]:focus::-ms-fill-upper {
     .page-title.stepper::after {
       margin-top: 8px; }
 
+.page-title__NHSUK {
+  font-family: "Frutiger W01", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  text-transform: none;
+  padding: 0; }
+  @media (min-width: 641px) {
+    .page-title__NHSUK {
+      font-size: 32px;
+      line-height: 48px; } }
+  @media (min-width: 925px) {
+    .page-title__NHSUK {
+      font-size: 36px;
+      line-height: 48px; } }
+  .page-title__NHSUK small {
+    display: block;
+    font-size: 60%;
+    font-weight: 300; }
+
 .banner {
   color: #000;
   font-family: "Frutiger W01", Arial, sans-serif;
