@@ -38,4 +38,31 @@ router.get('/M/:subdir/:subdir2/:view', function(req, res, next) {
 });
 // // // // // // //
 
+// GET v1 index page.
+router.get('/NHSUK', function(req, res, next) {
+  res.render( 'NHSUK/index' );
+});
+
+// GET all v1 URL reqs and push them to a template in the v1 file
+// This feels really brittle and hacky...
+// No handling of no view found...
+router.get('/NHSUK/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( 'NHSUK/' + theView );
+});
+
+router.get('/NHSUK/:subdir/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  res.render( 'NHSUK/' + theDir + '/' + theView );
+});
+
+router.get('/NHSUK/:subdir/:subdir2/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  res.render( 'NHSUK/' + theDir + '/' + theDir2 + '/' + theView );
+});
+// // // // // // //
+
 module.exports = router;
