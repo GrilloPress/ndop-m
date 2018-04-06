@@ -2146,7 +2146,8 @@ p {
   background-color: #d8dde0; }
 
 .callout--info {
-  background-color: #f0f4f5; }
+  background-color: #f0f4f5;
+  border: 0; }
 
 .callout--attention {
   border: 8px solid #0072ce; }
@@ -3098,18 +3099,18 @@ input[type=range]:focus::-ms-fill-upper {
 
 .page-title__NHSUK {
   font-family: "Frutiger W01", Arial, sans-serif;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 600;
-  line-height: 40px;
+  line-height: 48px;
   text-transform: none;
-  padding: 0; }
+  padding: 22px 0 0 4px; }
   @media (min-width: 641px) {
     .page-title__NHSUK {
-      font-size: 32px;
+      font-size: 40px;
       line-height: 48px; } }
   @media (min-width: 925px) {
     .page-title__NHSUK {
-      font-size: 36px;
+      font-size: 40px;
       line-height: 48px; } }
   .page-title__NHSUK small {
     display: block;

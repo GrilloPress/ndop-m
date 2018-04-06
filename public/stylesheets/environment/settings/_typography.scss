@@ -15,6 +15,7 @@ $type-settings-map: (
   20: 0,
   24: 1,
   36: 2,
+  40: 5,
   42: 4,
   64: 3,
 );
@@ -116,6 +117,23 @@ $type-settings: (
     ),
     small: (
       font-size: 40px,
+      line-height: $baseline-grid-unit * 12, // 48px
+    ),
+    print: (
+      font-size: 22pt,
+    ),
+  ),
+  5: (
+    large: (
+      font-size: 40px,
+      line-height: $baseline-grid-unit * 12, // 80px
+    ),
+    medium: (
+      font-size: 40px,
+      line-height: $baseline-grid-unit * 12, // 64px
+    ),
+    small: (
+      font-size: 36px,
       line-height: $baseline-grid-unit * 12, // 48px
     ),
     print: (
