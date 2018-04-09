@@ -39,6 +39,33 @@ router.get('/M/:subdir/:subdir2/:view', function(req, res, next) {
 // // // // // // //
 
 // GET v1 index page.
+router.get('/M1', function(req, res, next) {
+  res.render( 'M1/index' );
+});
+
+// GET all v1 URL reqs and push them to a template in the v1 file
+// This feels really brittle and hacky...
+// No handling of no view found...
+router.get('/M1/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( 'M1/' + theView );
+});
+
+router.get('/M1/:subdir/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  res.render( 'M1/' + theDir + '/' + theView );
+});
+
+router.get('/M1/:subdir/:subdir2/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  res.render( 'M1/' + theDir + '/' + theDir2 + '/' + theView );
+});
+// // // // // // //
+
+// GET v1 index page.
 router.get('/NHSUK', function(req, res, next) {
   res.render( 'NHSUK/index' );
 });
