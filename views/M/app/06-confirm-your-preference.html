@@ -1,4 +1,5 @@
-{% set title = 'Review your preference' %}
+{% set title = 'Review your choice - Find out about my data choice' %}
+{% set content_title = 'Review your choice' %}
 {% set PROTOTYPE_URL = 'M' %}
 {% block scripts %}
 <script src="/javascripts/{{PROTOTYPE_URL}}/06-confirm-your-choice.js"></script>
@@ -9,18 +10,18 @@
 <main id="content" role="main">
   <div class="page-band">
     <div class="page-section">
-      Register your preference for sharing health data
+      Find out about my data choice
     </div>
   </div>
 
   <div class="page-section">
       <div class="reading-width">
-        <h1 class="page-title stepper">{{title}} <small>Step 5 of 5</small></h1>
+        <h1 class="page-title stepper">{{content_title}} <small>Step 5 of 5</small></h1>
 
           <div class="grid-row">
             <div class="column--two-thirds">
 
-              <h2 id="your-preference" class="h3">Your preference</h2>
+              <h2 id="your-preference" class="h3">Your choice</h2>
 
                <p class="confirmation-type" id="email-confirm" hidden="">We will send confirmation of your choice to al•••••••••••@gmail.com</p>
 

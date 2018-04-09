@@ -1,4 +1,5 @@
-{% set title = 'Register your preference for sharing patient health data' %}
+{% set title = 'How to register your choice online - Find out about my data choice' %}
+{% set content_title = 'How to register your choice online' %}
 {% set PROTOTYPE_URL = 'M' %}
 {% block scripts %}
 <script src="/javascripts/details.polyfill-1.0.0.min.js"></script>
@@ -9,7 +10,7 @@
 <main id="content" role="main">
   <div class="page-band">
     <div class="page-section">
-      Register your preference for sharing health data
+      Find out about my data choice
     </div>
   </div>
 
@@ -18,9 +19,9 @@
           <div class="grid-row">
             <div class="column--full">
               <div class="callout callout--interruption alt">
-                <h1>How to register your preference online</h1>
+                <h1>{{content_title}}</h1>
                 <p>
-                  For security reasons we must verify who you are before you can set your preference. We will do this by searching for your contact details in our database.
+                  For security reasons we must verify who you are before you can manage your choice. We will do this by searching for your contact details in our database.
                 </p>
 
                 <div class="grid-row">
@@ -69,7 +70,7 @@
                       <div class="int-card--body">
                         <h2> Enter your security code </h2>
                         <p>
-                          When your code is verified, you will be able to set your preference online.
+                          When your code is verified, you will be able to manage your choice online.
                         </p>
                       </div>
                     </div>
