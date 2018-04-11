@@ -505,6 +505,20 @@ body {
     .column--one-quarter {
       float: left;
       width: 25%; } }
+  .column--one-quarter.tablet {
+    display: block;
+    padding: 0 16px; }
+    @media (min-width: 641px) {
+      .column--one-quarter.tablet {
+        float: left;
+        width: 25%; } }
+  .column--one-quarter.mobile {
+    display: block;
+    padding: 0 16px; }
+    @media (max-width: 640px) {
+      .column--one-quarter.mobile {
+        float: left;
+        width: 25%; } }
 
 .column--one-third, .step-card-container-thirds .step {
   display: block;

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://assets.nhs.uk/fonts/nhsuk-fonts-1.1.0.css");
+@import url("https://assets.nhs.uk/fonts/nhsuk-fonts-1.3.0.css");
 html {
   box-sizing: border-box; }
 
@@ -1454,7 +1454,7 @@ table th {
   .local-header .link-list__row > * {
     margin-top: 0; } }
 
-.link-list {
+.link-list, .address-list {
   list-style: none;
   padding-left: 0; }
 
@@ -1983,18 +1983,15 @@ p {
   width: 22px;
   zoom: 1; }
 
-.js-enabled .multiple-choice--radio.is-focused::before, .js-enabled
-.multiple-choice--checkbox.is-focused::before {
+.js-enabled .multiple-choice--radio.is-focused::before, .js-enabled .multiple-choice--checkbox.is-focused::before {
   box-shadow: 0 0 0 3px #ffb81c; }
 
-.js-enabled .multiple-choice--radio.is-selected::after, .js-enabled
-.multiple-choice--checkbox.is-selected::after {
+.js-enabled .multiple-choice--radio.is-selected::after, .js-enabled .multiple-choice--checkbox.is-selected::after {
   filter: alpha(opacity=100);
   opacity: 1;
   zoom: 1; }
 
-.js-enabled .multiple-choice--radio.has-error::before, .js-enabled
-.multiple-choice--checkbox.has-error::before {
+.js-enabled .multiple-choice--radio.has-error::before, .js-enabled .multiple-choice--checkbox.has-error::before {
   border-color: #da291c; }
 
 .inline-list {
@@ -4596,6 +4593,20 @@ h6 {
   }
 }
 
+.column--one-quarter {
+  @include grid-column(1 / 4);
+
+  &.tablet {
+
+    @include grid-column(1 / 4, tablet);
+  }
+
+  &.mobile {
+
+    @include grid-column(1 / 4, mobile);
+  }
+}
+
 */
 .column--one-third {
   display: block;
@@ -4624,10 +4635,51 @@ h6 {
     float: left;
     width: 33.33333%; } }
 
+.column--one-quarter {
+  display: block;
+  padding: 0 16px; }
+
+@media (min-width: 925px) {
+  .column--one-quarter {
+    float: left;
+    width: 25%; } }
+
+.column--one-quarter.tablet {
+  display: block;
+  padding: 0 16px; }
+
+@media (min-width: 641px) {
+  .column--one-quarter.tablet {
+    float: left;
+    width: 25%; } }
+
+.column--one-quarter.mobile {
+  display: block;
+  padding: 0 16px; }
+
+@media (max-width: 640px) {
+  .column--one-quarter.mobile {
+    float: left;
+    width: 25%; } }
+
 /*
 $link-hover-colour: #04718C;
 */
 a:hover {
   color: #04718C; }
+
+address {
+  font-style: normal; }
+
+.address-list li {
+  margin: 0 !important; }
+
+/*
+$grey-5
+*/
+.thumbnail--download {
+  border: 5px solid #f0f4f5; }
+  .thumbnail--download:hover {
+    opacity: 0.7; }
 
 /*# sourceMappingURL=choices.css.map */
