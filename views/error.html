@@ -2,13 +2,14 @@
 {% extends 'layouts/layout.html' %}
 
 {% block body %}
-<main id="content" role="main">
+<main id="content" role="main" class="app--error">
   <div class="page-section">
-    <div class="local-header">
-      <h1 class="local-header__title">{{message}}</h1>
+    <div class="grid-row">
+      <div class="column--full">
+        <h1>{{message}} - {{error.status}}</h1>
+        <p><pre>{{error.stack}}</pre></p>
+      </div>
     </div>
-    <h2>{{error.status}}</h2>
-    <p><pre>{{error.stack}}</pre></p>
   </div>
 </main>
 {% endblock %}

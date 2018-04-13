@@ -3502,6 +3502,38 @@ input[type=range]:focus::-ms-fill-upper {
       width: 100%; }
   .callout--interruption .int-card .int-card--body {
     margin: 0; }
+  .callout--interruption ol {
+    counter-reset: li;
+    margin-left: 0;
+    padding-left: 0; }
+    .callout--interruption ol p {
+      margin-top: 4px; }
+    .callout--interruption ol li {
+      position: relative;
+      list-style: none;
+      margin: 0 0 6px 2em;
+      padding: 4px 16px; }
+      .callout--interruption ol li:before {
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        top: -2px;
+        left: -2em;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 2em;
+        margin-right: 8px;
+        border: 1px solid #231f20;
+        color: #231f20;
+        background: white;
+        text-align: center;
+        padding: 3px;
+        border-radius: 50%; }
+  .callout--interruption li ol, .callout--interruption li ul {
+    margin-top: 6px; }
+  .callout--interruption ol ol li:last-child {
+    margin-bottom: 0; }
 
 .link--new-tab {
   text-decoration: none;

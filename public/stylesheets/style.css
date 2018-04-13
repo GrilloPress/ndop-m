@@ -7,4 +7,12 @@
 .NHSUK .search__button {
   top: 0px; }
 
+.app--error pre {
+  width: 100%;
+  overflow: scroll;
+  padding: 2em;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #efefef; }
+
 /*# sourceMappingURL=style.css.map */
