@@ -57,8 +57,7 @@ function submitCode() {
     // if 666 handle as error?
 
   } else {
-    // window.location.href = THE_PROTOTYPE_URL + "/app/05-set-your-preference";
-    $("#form").submit();
+    window.location.href = THE_PROTOTYPE_URL + "/app/05-set-your-preference";
   }
 
 }

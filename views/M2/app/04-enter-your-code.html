@@ -31,14 +31,14 @@
               </ul>
             </div>
 
-          <form id="form" class="form" action="/{{PROTOTYPE_URL}}/app/05-set-your-preference" method="post">
+          <form class="form" action="javascript:submitCode()">
             <div class="form-group form-row">
               <label class="form-label" for="code-input">Enter the code received on your mobile or email</label>
               <div id="code-input-error" class="error error-message">
                 <p class="error-text error-label">Enter your code below</p>
                 <br />
               </div>
-              <input name="code" id="code-input" class="-small form-control" type="number">
+              <input id="code-input" class="-small form-control" type="number">
               <p>Didn't receive your code? <a id="resend-code" href="javascript:void(0);" onclick="resendCode()">Resend code</a></p>
               <input type="button" class="button" value="Submit" onclick="submitCode()" />
             </div>
