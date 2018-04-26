@@ -85,6 +85,10 @@
     <!-- endnoindex -->
   </header>
     {% block body %}{% endblock %}
+    {% if SUBFOOTER_TRUE %}
+      {% include "partials/_choices_local_footer.html" %}
+    {% endif %}
+
     {% include "partials/_choices_footer.html" %}
     {% include "partials/_analytics.html" %}
 
