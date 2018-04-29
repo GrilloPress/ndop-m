@@ -132,4 +132,39 @@ router.get('/NEXT/:subdir/:subdir2/:view', function(req, res, next) {
 });
 // // // // // // //
 
+// GET v1 index page.
+router.get('/M3', function(req, res, next) {
+  res.render( 'M3/index' );
+});
+
+// GET all v1 URL reqs and push them to a template in the v1 file
+// This feels really brittle and hacky...
+// No handling of no view found...
+router.all('/M3/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( 'M3/' + theView, {
+    data: req.body
+  } );
+});
+
+router.all('/M3/:subdir/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  console.log(req.body);
+  // if you want session stuff console.log(req.session);
+  res.render( 'M3/' + theDir + '/' + theView, {
+    data: req.body,
+  } );
+
+});
+
+router.all('/M3/:subdir/:subdir2/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  res.render( 'M3/' + theDir + '/' + theDir2 + '/' + theView, {
+    data: req.body
+  } );
+});
+
 module.exports = router;
