@@ -80,12 +80,12 @@ function confirm() {
 
       $( '#single-question' ).addClass("form-row-error-active has-error");
       $( '#single-question h2' ).addClass("error-label");
-      $( "#link-to-errors" ).append( "<li id='single-question-link'>" + "<a href='#single-question'>" + "No single preference set" + "</a>" + "</li>" );
+      $( "#link-to-errors" ).append( "<li id='single-question-link'>" + "<a href='#single-question'>" + "No choice selected" + "</a>" + "</li>" );
     } else {
       $( '#single-question' ).removeClass("form-row-error-active has-error");
       $( '#single-question h2' ).removeClass("error-label");
       $('#single-question-link').remove();
-      $( "#link-to-errors" ).append( "<li id='single-question-link'>" + "<a href='#single-question'>" + "No single preference set" + "</a>" + "</li>" );
+      $( "#link-to-errors" ).append( "<li id='single-question-link'>" + "<a href='#single-question'>" + "No choice selected" + "</a>" + "</li>" );
     }
 
     $('html,body').animate({scrollTop: $('#error-summary').offset().top -100});
