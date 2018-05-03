@@ -28,24 +28,26 @@
         <div class="column--one-third">
           <ol>
             <li>
+              {{content_title}}
+            </li>
+            <li>
               <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
             </li>
             <li>
               <a href="/{{PROTOTYPE_URL}}/02-benefits-of-data-sharing">Benefits of data sharing</a>
             </li>
-            <li>
-              <a href="/{{PROTOTYPE_URL}}/03-who-uses-your-data">Who uses your data</a>
-            </li>
           </ol>
         </div>
         <div class="column--one-third">
           <ol start="4">
+
+            <li>
+              <a href="/{{PROTOTYPE_URL}}/03-who-uses-your-data">Who uses your data</a>
+            </li>
             <li>
               <a href="/{{PROTOTYPE_URL}}/04-how-data-is-protected">How data is protected</a>
             </li>
-            <li>
-              {{content_title}}
-            </li>
+
           </ol>
         </div>
       </div>
@@ -128,7 +130,7 @@
     <div class="reading-width">
       <div class="grid-row">
         <div class="column--two-thirds">
-          {{ patterns.page_nav( "How data is protected", "/" + PROTOTYPE_URL + "/04-how-data-is-protected", "", "" ) }}
+          {{ patterns.page_nav( "", "", "Overview", "/" + PROTOTYPE_URL + "/01-overview" ) }}
         </div>
       </div>
     </div>
