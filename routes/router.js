@@ -292,4 +292,33 @@ router.all('/M5/:subdir/:subdir2/:view', function(req, res, next) {
   } );
 });
 
+
+// GET v1 index page.
+router.get('/release', function(req, res, next) {
+  res.render( 'release/index' );
+});
+
+// GET all v1 URL reqs and push them to a template in the v1 file
+// This feels really brittle and hacky...
+// No handling of no view found...
+router.get('/release/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( 'release/' + theView );
+});
+
+router.get('/release/:subdir/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  res.render( 'release/' + theDir + '/' + theView );
+});
+
+router.get('/release/:subdir/:subdir2/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  res.render( 'release/' + theDir + '/' + theDir2 + '/' + theView );
+});
+// // // // // // //
+
+
 module.exports = router;
