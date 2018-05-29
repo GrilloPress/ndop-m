@@ -16,6 +16,11 @@ router.get('/M', function(req, res, next) {
   res.render( 'M/index' );
 });
 
+router.get('/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( theView );
+});
+
 // GET all v1 URL reqs and push them to a template in the v1 file
 // This feels really brittle and hacky...
 // No handling of no view found...
