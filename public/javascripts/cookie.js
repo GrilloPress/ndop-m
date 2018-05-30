@@ -12,7 +12,7 @@ function createDiv(){
     var bodytag = document.getElementsByTagName('body')[0];
     var div = document.createElement('div');
     div.setAttribute('class','banner cookie');
-    div.innerHTML = '<div class="page-section">We install small files called "cookies" on your device to make this service simpler. <br /> <a href="' + PROTOTYPE_URL  + '" target="_blank" rel="nofollow" title="Find out more or manage your cookies settings">Find out more or manage your cookies settings<span class="util-visuallyhidden"> - Page opens in new window</span></a><span aria-hidden="true"> (opens in new window)</span>.</div>';
+    div.innerHTML = '<div class="page-section">We install small files known as "cookies" on your device to make this service simpler. <br /> <a href="' + PROTOTYPE_URL  + '" target="_blank" rel="nofollow" title="Find out more or manage your cookie settings">Find out more or manage your cookie settings<span class="util-visuallyhidden"> - Page opens in new window</span></a><span aria-hidden="true"> (opens in new window)</span>.</div>';
 
     // bodytag.appendChild(div); // Adds the Cookie Law Banner just before the closing </body> tag
     // or
