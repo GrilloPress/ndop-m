@@ -1307,6 +1307,13 @@ table {
 .table--two-column th {
   width: 50%; }
 
+.table--responsive {
+  display: block;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: auto;
+  width: 100%; }
+
 .global-header {
   background-color: #fff;
   border-bottom: 2px solid #005eb8; }
