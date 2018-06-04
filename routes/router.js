@@ -17,6 +17,12 @@ router.get('/M', function(req, res, next) {
 });
 
 // GET v1 index page.
+router.get('/M/01-overview', function(req, res, next) {
+  res.render( 'M/app/index' );
+});
+
+
+// GET v1 index page.
 router.get('/M1', function(req, res, next) {
   res.render( 'M1/index' );
 });
