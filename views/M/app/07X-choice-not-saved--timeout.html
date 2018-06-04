@@ -1,0 +1,40 @@
+{% set title = 'Unable to save your choice - Find out why your NHS data matters' %}
+{% set content_title = 'Unable to save your choice' %}
+{% set PROTOTYPE_URL = 'M' %}
+{% block scripts %}
+<script src="/javascripts/{{PROTOTYPE_URL}}/07X.js"></script>
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-band">
+    <div class="page-section">
+      Find out why your NHS data matters
+    </div>
+  </div>
+
+  <div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <h1 class="page-title">{{content_title}}</h1>
+              <p class="alert alert-error" role="alert" style="display:none;" tabindex="-1">Your choice has not been saved.</p>
+              <p>
+                Sorry, we were unable to save your choice.
+              </p>
+              <p>
+                We may be able to manage your choice on your behalf.
+              </p>
+              <p>
+                Call: 0300 303 5678
+              </p>
+              <p>
+                Open: 9am to 5pm Monday to Friday (excluding bank holidays).
+              </p>
+            </div>
+          </div>
+      </div>
+  </div>
+</main>
+{% endblock %}

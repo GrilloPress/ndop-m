@@ -19,4 +19,10 @@
     border: 1px solid $blue;
     background-color: lighten( $blue, 60% ); //super pale, contrast of AAA 14.78:1
   }
+
+  &.alert-error {
+
+    border: 1px solid $red;
+    background-color: lighten( $red, 50% ); //super pale, contrast of AAA 14.78:1
+  }
 }
