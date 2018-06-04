@@ -16,250 +16,39 @@ router.get('/M', function(req, res, next) {
   res.render( 'M/index' );
 });
 
-router.get('/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( theView );
-});
-
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.get('/M/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( 'M/' + theView );
-});
-
-router.get('/M/:subdir/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  res.render( 'M/' + theDir + '/' + theView );
-});
-
-router.get('/M/:subdir/:subdir2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  var theDir2 = req.params.subdir2;
-  res.render( 'M/' + theDir + '/' + theDir2 + '/' + theView );
-});
-// // // // // // //
-
 // GET v1 index page.
 router.get('/M1', function(req, res, next) {
   res.render( 'M1/index' );
 });
-
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.all('/M1/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( 'M1/' + theView, {
-    data: req.body
-  } );
-});
-
-router.all('/M1/:subdir/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  console.log(req.body);
-  // if you want session stuff console.log(req.session);
-  res.render( 'M1/' + theDir + '/' + theView, {
-    data: req.body,
-  } );
-
-});
-
-router.all('/M1/:subdir/:subdir2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  var theDir2 = req.params.subdir2;
-  res.render( 'M1/' + theDir + '/' + theDir2 + '/' + theView, {
-    data: req.body
-  } );
-});
-
-
-// // // // // // //
 
 // GET v1 index page.
 router.get('/NHSUK', function(req, res, next) {
   res.render( 'NHSUK/index' );
 });
 
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.get('/NHSUK/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( 'NHSUK/' + theView );
-});
-
-router.get('/NHSUK/:subdir/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  res.render( 'NHSUK/' + theDir + '/' + theView );
-});
-
-router.get('/NHSUK/:subdir/:subdir2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  var theDir2 = req.params.subdir2;
-  res.render( 'NHSUK/' + theDir + '/' + theDir2 + '/' + theView );
-});
-// // // // // // //
-
-// // // // // // //
-
 // GET v1 index page.
 router.get('/NEXT', function(req, res, next) {
   res.render( 'NEXT/index' );
 });
-
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.get('/NEXT/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( 'NEXT/' + theView );
-});
-
-router.get('/NEXT/:subdir/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  res.render( 'NEXT/' + theDir + '/' + theView );
-});
-
-router.get('/NEXT/:subdir/:subdir2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  var theDir2 = req.params.subdir2;
-  res.render( 'NEXT/' + theDir + '/' + theDir2 + '/' + theView );
-});
-// // // // // // //
 
 // GET v1 index page.
 router.get('/NEXT-alt-1', function(req, res, next) {
   res.render( 'NEXT-alt-1/index' );
 });
 
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.get('/NEXT-alt-1/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( 'NEXT-alt-1/' + theView );
-});
-
-router.get('/NEXT-alt-1/:subdir/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  res.render( 'NEXT-alt-1/' + theDir + '/' + theView );
-});
-
-router.get('/NEXT-alt-1/:subdir/:subdir2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  var theDir2 = req.params.subdir2;
-  res.render( 'NEXT-alt-1/' + theDir + '/' + theDir2 + '/' + theView );
-});
-// // // // // // //
-
 // GET v1 index page.
 router.get('/NEXT-alt-2', function(req, res, next) {
   res.render( 'NEXT-alt-2/index' );
 });
-
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.get('/NEXT-alt-2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( 'NEXT-alt-2/' + theView );
-});
-
-router.get('/NEXT-alt-2/:subdir/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  res.render( 'NEXT-alt-2/' + theDir + '/' + theView );
-});
-
-router.get('/NEXT-alt-2/:subdir/:subdir2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  var theDir2 = req.params.subdir2;
-  res.render( 'NEXT-alt-2/' + theDir + '/' + theDir2 + '/' + theView );
-});
-// // // // // // //
 
 // GET v1 index page.
 router.get('/M3', function(req, res, next) {
   res.render( 'M3/index' );
 });
 
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.all('/M3/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( 'M3/' + theView, {
-    data: req.body
-  } );
-});
-
-router.all('/M3/:subdir/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  console.log(req.body);
-  // if you want session stuff console.log(req.session);
-  res.render( 'M3/' + theDir + '/' + theView, {
-    data: req.body,
-  } );
-
-});
-
-router.all('/M3/:subdir/:subdir2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  var theDir2 = req.params.subdir2;
-  res.render( 'M3/' + theDir + '/' + theDir2 + '/' + theView, {
-    data: req.body
-  } );
-});
-
-
 // GET v1 index page.
 router.get('/M4', function(req, res, next) {
   res.render( 'M4/index' );
-});
-
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.all('/M4/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( 'M4/' + theView, {
-    data: req.body
-  } );
-});
-
-router.all('/M4/:subdir/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  console.log(req.body);
-  // if you want session stuff console.log(req.session);
-  res.render( 'M4/' + theDir + '/' + theView, {
-    data: req.body,
-  } );
-
-});
-
-router.all('/M4/:subdir/:subdir2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  var theDir2 = req.params.subdir2;
-  res.render( 'M4/' + theDir + '/' + theDir2 + '/' + theView, {
-    data: req.body
-  } );
 });
 
 // GET v1 index page.
@@ -267,91 +56,39 @@ router.get('/M5', function(req, res, next) {
   res.render( 'M5/index' );
 });
 
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.all('/M5/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( 'M5/' + theView, {
-    data: req.body
-  } );
-});
-
-router.all('/M5/:subdir/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  console.log(req.body);
-  // if you want session stuff console.log(req.session);
-  res.render( 'M5/' + theDir + '/' + theView, {
-    data: req.body,
-  } );
-
-});
-
-router.all('/M5/:subdir/:subdir2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  var theDir2 = req.params.subdir2;
-  res.render( 'M5/' + theDir + '/' + theDir2 + '/' + theView, {
-    data: req.body
-  } );
-});
-
-
 // GET v1 index page.
 router.get('/release', function(req, res, next) {
   res.render( 'release/index' );
 });
-
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.get('/release/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( 'release/' + theView );
-});
-
-router.get('/release/:subdir/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  res.render( 'release/' + theDir + '/' + theView );
-});
-
-router.get('/release/:subdir/:subdir2/:view', function(req, res, next) {
-  var theView = req.params.view;
-  var theDir = req.params.subdir;
-  var theDir2 = req.params.subdir2;
-  res.render( 'release/' + theDir + '/' + theDir2 + '/' + theView );
-});
-// // // // // // //
-
 
 // GET v1 index page.
 router.get('/test', function(req, res, next) {
   res.render( 'test/index' );
 });
 
-// GET all v1 URL reqs and push them to a template in the v1 file
-// This feels really brittle and hacky...
-// No handling of no view found...
-router.get('/test/:view', function(req, res, next) {
-  var theView = req.params.view;
-  res.render( 'test/' + theView );
+// GET v1 index page.
+router.get('/future', function(req, res, next) {
+  res.render( 'future/index' );
 });
 
-router.get('/test/:subdir/:view', function(req, res, next) {
+// catch all GET routes
+
+router.get('/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( theView );
+});
+
+router.get('/:subdir/:view', function(req, res, next) {
   var theView = req.params.view;
   var theDir = req.params.subdir;
-  res.render( 'test/' + theDir + '/' + theView );
+  res.render( theDir + '/' + theView );
 });
 
-router.get('/test/:subdir/:subdir2/:view', function(req, res, next) {
+router.get('/:subdir/:subdir2/:view', function(req, res, next) {
   var theView = req.params.view;
   var theDir = req.params.subdir;
   var theDir2 = req.params.subdir2;
-  res.render( 'test/' + theDir + '/' + theDir2 + '/' + theView );
+  res.render( theDir + '/' + theDir2 + '/' + theView );
 });
-// // // // // // //
-
 
 module.exports = router;
