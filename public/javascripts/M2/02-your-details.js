@@ -26,13 +26,13 @@ function matchDetails() {
 
 	//Only continues if the form is complete
 	if ((firstName == 'devil') && (formComplete == true)) {
-			window.location.href = "/m1" + '/app/02X-verification-fail';
+			window.location.href = "/M2" + '/app/02X-verification-fail';
 		} else if ((formComplete == true) && (firstName == 'satan')) {
-			window.location.href = "/m1" + '/app/02X-contact-us';
+			window.location.href = "/M2" + '/app/02X-contact-us';
 		} else if ((formComplete == true) && (firstName == 'young')) {
-			window.location.href = "/m1" + '/app/02X-age-restriction';
+			window.location.href = "/M2" + '/app/02X-age-restriction';
 		} else if (formComplete == true) {
-			window.location.href= "/m1" + "/app/03-verification-option"
+			window.location.href= "/M2" + "/app/03-verification-option"
 		}
 };
 

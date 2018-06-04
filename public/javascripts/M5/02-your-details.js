@@ -1,6 +1,6 @@
 //Please enter your personal details page ---------------------------------------------------------------------------------
 //JQuery ------------------------------------------------------------------------------------------------------------------
-var PROTOTYPE_URL = "/M";
+var PROTOTYPE_URL = "/M5";
 
 //waits for the page to load
 $(window).load(function() {
@@ -26,13 +26,13 @@ function matchDetails() {
 
 	//Only continues if the form is complete
 	if ((firstName == 'devil') && (formComplete == true)) {
-			window.location.href = "/m" + '/app/02X-verification-fail';
+			window.location.href = "/M5" + '/app/02X-verification-fail';
 		} else if ((formComplete == true) && (firstName == 'satan')) {
-			window.location.href = "/m" + '/app/02X-contact-us';
+			window.location.href = "/M5" + '/app/02X-contact-us';
 		} else if ((formComplete == true) && (firstName == 'young')) {
-			window.location.href = "/m" + '/app/02X-age-restriction';
+			window.location.href = "/M5" + '/app/02X-age-restriction';
 		} else if (formComplete == true) {
-			window.location.href= "/m" + "/app/03-verification-option"
+			window.location.href= "/M5" + "/app/03-verification-option"
 		}
 };
 
