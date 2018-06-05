@@ -21,6 +21,11 @@ router.get('/M/01-overview', function(req, res, next) {
   res.render( 'M/app/index' );
 });
 
+// GET v1 index page.
+router.get('/M/00-other-ways-to-manage-your-choice', function(req, res, next) {
+  res.render( 'release/00-other-ways-to-manage-your-choice' );
+});
+
 
 // GET v1 index page.
 router.get('/M1', function(req, res, next) {
