@@ -56,7 +56,11 @@ function submitCode() {
     window.location.href = THE_PROTOTYPE_URL + "/app/04X-incorrect-code";
     // if 666 handle as error?
 
-  } else {
+  } else if ( code == '999' ) {
+    window.location.href = THE_PROTOTYPE_URL + "/app/04X-code-expired";
+    // if 999 handle as error?
+
+  }else {
     window.location.href = THE_PROTOTYPE_URL + "/app/05-set-your-preference";
   }
 
